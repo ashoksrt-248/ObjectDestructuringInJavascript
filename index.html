@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <style>
+            h1{background-color: chocolate;text-align: center; }
+            h2{background-color: cornflowerblue;text-align: center;}
+            div{background-color: darkkhaki;font-family: 'Courier New', Courier, monospace;}
+        </style>
+        <script>
+            let user = {
+  name: 'Mike',
+  friend: ["John", "Paul", "Jimmy"],
+  location: {
+    region:"England",
+    country:"United Kingdom"
+  },
+  aboutMe: {
+    status: "Single",
+    pet: "Dog",
+  }
+}
+
+const { name, friend, location:{region, country}, aboutMe: {status , pet} } = user;
+
+console.log(name); // output: "Mike"
+console.log(friend[0])  // output: 'John'
+console.log(country); // output: "United Kingdom"
+console.log(status); // output: "Single"
+console.log(pet); // output: "Dog"
+
+
+        </script>
+    </head>
+    <body>
+        <h1>RESULTS</h1>
+        <h2>Mike</h2>
+        <h2>John</h2>
+        <h2>United Kingdom</h2>
+        <h2>Single</h2>
+        <h2>Dog</h2>
+        <div>
+            let user = {
+                name: 'Mike',
+                friend: ["John", "Paul", "Jimmy"],
+                location: {
+                  region:"England",
+                  country:"United Kingdom"
+                },
+                aboutMe: {
+                  status: "Single",
+                  pet: "Dog",
+                }
+              }
+              
+              const { name, friend, location:{region, country}, aboutMe: {status , pet} } = user;
+              
+              console.log(name); // output: "Mike"
+              console.log(friend[0])  // output: [ 'John', 'Paul', 'Jimmy' ]
+              console.log(country); // output: { region: 'England', country: 'United Kingdom' }
+              console.log(status); // output: "Single"
+              console.log(pet); // output: "Dog"
+            </div>      
+    </body>
+</html>
